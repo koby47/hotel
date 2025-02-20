@@ -201,11 +201,12 @@ height:60vh;
   width: 40%;
   height: 20%;
   height: 30vh;
-  margin-right:150px;
   background-image: url(../img/hotel2.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
+  position: relative;
+  
 }
 .about-head{
   width: 30%;
@@ -213,6 +214,7 @@ height:60vh;
 }
 .about-head p {
   font-size: 14px;
+  justify-content: flex-end;
 }
 
 .about-head h1{
@@ -228,7 +230,6 @@ height:60vh;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   justify-content: center;
-  align-items: center;
   max-width: 1200px;
   margin: auto;
 }
