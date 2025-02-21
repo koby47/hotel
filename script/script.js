@@ -3,7 +3,8 @@
 const button = document.getElementById('btn')
 console.log(button)
 button.addEventListener('click',() => {
-     // alert('hey')
+     
+     alert('More to Come')
 
      fetchData ('https:/jsonplaceholder.typicode.com/user');
 
@@ -24,6 +25,9 @@ async function fetchData(url) {
       console.log(response)
 
       console.log(response[1])
+
+
+      
 
  response.map(
       (user) => {
@@ -51,3 +55,5 @@ async function fetchData(url) {
 // //       .then(json => console.log(json))
 
 //       // console.log(json)
+
+

@@ -7,96 +7,58 @@
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="./script/script.js" defer></script>
+    <!-- <script src="./script/script.js" defer></script> -->
+
+    <script src="./script/form.js" defer></script>
 </head>
 <body>
     <section>
-        <div  class="bg-image">
-           
-          <div class="flex-container">
-          <a href="/index.html" class="icon">Hotell</a>
-          <nav class="flex-items">
-          <li ><a href="/index.html">Home</a></li>
-          <li><a href="#">Destination</a> </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <input type="search" name="" id="" placeholder="search">
-         
-      
-        </nav>
+        <div class="bg-image">
+            <div class="flex-container">
+                <a href="/index.html" class="icon">Hotell</a>
+                <nav class="flex-items">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <input type="search" placeholder="Search">
+                </nav>
+            </div>
+            <div class="header-text">
+                <h1 class="headert">Home Away From Home</h1>
+                <div class="div-button">
+                    <!-- <button class="divbutton" id="btn">Explore</button> -->
+                </div>
+            </div>
         </div>
-      
-        <div class="header-text">
-          <h1 class="headert">Go someplace you've never been before<h1>
-
-            <div class="div-button">
-           <button class="divbutton" id="btn"> Explore</button>
-          </div>
-      </div>
-      </section class="firstsection">
-      <section  class="section-2">
-
-        
-
-<form action="submit_form.php" method="POST">
-
-  <div class="forms">
-
+    </section>
     
-
-      <div class="form-item">
-
-
-          <input type="datetime" name="Date" placeholder="Date of Arrival" required>
-
-      </div>
-
-
-
-      <div class="form-item">
-
-
-          <input type="datetime" id="date" name="Date of Departure" placeholder="Date of Departure" required>
-
-      </div>
-
-
-
-      <div class="form-item">
-
-          
-
-          <select id="travelType" name="travelType" required>
-
-              <option value="">Select Travel Type</option>
-
-              <option value="adventure">Adventure</option>
-
-              <option value="luxury">Luxury</option>
-
-              <option value="family">Family</option>
-
-              <option value="honeymoon">Honeymoon</option>
-
-              <option value="cultural">Cultural</option>
-
-          </select>
-
-      </div>
-
-      <button class="b-f">Find now</button>
-
-  </div>
-
-
-
-  
-
-</form>
-
-
-      </section>
+    <section class="section-2">
+        <form id="booking-form" method="POST">
+            <div class="forms">
+                <label for="">Date of Arrival</label>
+                <div class="form-item">
+                    <input type="datetime-local" name="Date" placeholder="Date of Arrival" required>
+                </div>
+                <div class="form-item">
+                    <label for="">Date of Departure</label>
+                    <input type="datetime-local" name="Date of Departure" placeholder="Date of Departure" required>
+                </div>
+                <div class="form-item">
+                    <select id="travelType" name="travelType" required>
+                        <option value="">Select Travel Type</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="family">Family</option>
+                        <option value="honeymoon">Honeymoon</option>
+                        <option value="cultural">Cultural</option>
+                    </select>
+                </div>
+                <button type="submit" class="b-f">Find Now</button>
+            </div>
+        </form>
+    </section>
       
 <section class="travel-info">
      <div class="travel-info-head">
